@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block body_class %}class="bg-red footer-dark"{% endblock %}
+{% block content %}
+<div class="page-container">
+    <h1>Welcome to HJ HAJATA Investment cc</h1>
+    <p>We are a trusted provider of comprehensive electrical and refrigeration services across Namibia. Based in Windhoek, we are dedicated to delivering high-quality workmanship and reliable solutions for all your needs.</p>
+    <div class="image-section">
+        <div class="image-row">
+            <img src="{{ url_for('static', filename='electrical.jpg') }}" alt="Electrical installation" class="service-image">
+            <img src="{{ url_for('static', filename='refrigeration.jpg') }}" alt="Refrigeration work" class="service-image">
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+<div class="contact-footer">
+    <p>Phone: +264 81 3911 333 | Location: Windhoek, Namibia</p>
+</div>
+{% endblock %}

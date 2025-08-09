@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page-container bg-red">
+    <h1>Contact Us</h1>
+    <p>We are ready to assist you with your electrical and refrigeration needs.</p>
+    <ul class="contact-info">
+        <li>
+            <img src="{{ url_for('static', filename='phone-icon.png') }}" alt="Phone Icon" class="contact-icon">
+            <span>Phone: +264 81 3911 333</span>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='location-icon.png') }}" alt="Location Icon" class="contact-icon">
+            <span>Location: Windhoek, Namibia (works country-wide!)</span>
+        </li>
+    </ul>
+
+    <div class="contact-form">
+        <h3>Send us a message:</h3>
+        <form action="#" method="post">
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
