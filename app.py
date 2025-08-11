@@ -14,7 +14,7 @@ def about():
 def services():
     return render_template('services.html')
 
-@app.route('/contact')
+@app.route('/contact', methods=['GET', 'POST'])
 def contact():
     return render_template('contact.html')
 
